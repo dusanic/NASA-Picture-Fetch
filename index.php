@@ -14,7 +14,7 @@ $text = explode('<p> <center>', explode('<b> ', $content)[2])[0];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>NASA daily picture fetch</title>
 </head>
 <body>
     <nav class="navbar">
@@ -27,8 +27,8 @@ $text = explode('<p> <center>', explode('<b> ', $content)[2])[0];
         </div>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Upwork</a></li>
-                <li><a href="#">Github</a></li>
+                <li><a href="https://www.upwork.com/freelancers/~01419f90278fe57a29" target="_blank">Upwork</a></li>
+                <li><a href="https://github.com/dusanic/NASA-Picture-Fetch/" target="_blank">Github</a></li>
             </ul>
         </div>
     </nav>
@@ -50,6 +50,7 @@ $text = explode('<p> <center>', explode('<b> ', $content)[2])[0];
     </div>
 
     <footer>
+        <p>Website Responsive</p>
         <p>Made by Milorad Dušanić</p>
     </footer>
 

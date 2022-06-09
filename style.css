@@ -182,11 +182,12 @@ footer {
     height: 80px;
     bottom: 0;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
 
 }
 footer p {
     color: #aaa;
     margin-top: 10px;
     margin-right: 16px;
+    margin-left: 16px;
 }
