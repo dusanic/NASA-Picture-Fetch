@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php 
 $content = file_get_contents("https://apod.nasa.gov/apod/astropix.html");
 
@@ -8,6 +7,7 @@ $text = explode('<p> <center>', explode('<b> ', $content)[2])[0];
 
 
 ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +44,8 @@ $text = explode('<p> <center>', explode('<b> ', $content)[2])[0];
             </div>
             <div class="image-description">
                 <p class="image-name"><?php echo $title;?></p>
-                <p class="image-text"><?php echo $text;?></p>
+                <p class="image-text"><?php echo $text;?></p><br>
+                <p>Source: <a href="https://apod.nasa.gov">apod.nasa.gov</a></p>
             </div>
         </div>
     </div>
