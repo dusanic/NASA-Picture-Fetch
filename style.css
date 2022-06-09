@@ -117,8 +117,14 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+    color: #8491f5;
+}
+
 .content {
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
 }
