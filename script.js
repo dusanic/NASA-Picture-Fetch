@@ -13,11 +13,3 @@ window.onload = (event) => {
         loadingScreen.remove()
     }, 800)
 }
-
-async function fetchData() {
-    const response = await fetch("https://apod.nasa.gov/apod/astropix.html", {method: "GET", headers: {'Content-Type': 'application/json'}})
-    var data = await response.json()
-    console.log(data)
-}
-
-fetchData()
