@@ -1,7 +1,7 @@
 <?php 
 $content = file_get_contents("https://apod.nasa.gov/apod/astropix.html");
 
-$imageurl = explode('">',explode('<a href="', $content)[2])[0];
+$imageurl = explode('"',explode('<IMG SRC="', $content)[1])[0];
 $title = explode(' </b>', explode('<b> ', $content)[1])[0];
 $text = explode('<p> <center>', explode('<b> ', $content)[2])[0];
 
